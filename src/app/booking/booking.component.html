@@ -1,0 +1,8 @@
+<h2>Book Your Ticket</h2>
+<form (ngSubmit)="confirmBooking()">
+  <label for="userName">Name:</label>
+  <input id="userName" [(ngModel)]="userName" name="userName" required>
+  <label for="seatsBooked">Seats:</label>
+  <input id="seatsBooked" type="number" [(ngModel)]="seatsBooked" name="seatsBooked" required>
+  <button type="submit">Confirm Booking</button>
+</form>
